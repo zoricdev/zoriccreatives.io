@@ -6,8 +6,12 @@ body {
     background-color: #02020C;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
-    width: 100%;
 }
+
+body.no-scroll {
+  overflow: hidden;
+}
+
 
 /* NAVBAR */
 
@@ -30,7 +34,6 @@ body {
   }
   
   .nav-links {
-    right: -100%;
     transition: right 0.3s ease-in-out;
     background: #12121B;
     border: 0.5px solid #fafafa27;
@@ -255,13 +258,11 @@ body {
 
 @media (max-width: 480px) {
   .Header-main-text {
-    padding-right: 15px;
     padding-top: 5px;
     font-size: 14px;
   }
 
   .Header-body-text {
-    padding-right: 15px;
     font-size: 11px;
   }
 }

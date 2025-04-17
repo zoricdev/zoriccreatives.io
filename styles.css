@@ -6,6 +6,7 @@ body {
     background-color: #02020C;
     font-family: 'Inter', sans-serif;
     overflow-x: hidden;
+    width: 100%;
 }
 
 /* NAVBAR */
@@ -25,10 +26,12 @@ body {
   }
 
   .nav-links.active {
-    transform: translateX(0);
+    right: 0;
   }
   
   .nav-links {
+    right: -100%;
+    transition: right 0.3s ease-in-out;
     background: #12121B;
     border: 0.5px solid #fafafa27;
     border-radius: 8px;
@@ -252,12 +255,14 @@ body {
 
 @media (max-width: 480px) {
   .Header-main-text {
+    padding-right: 15px;
     padding-top: 5px;
     font-size: 14px;
   }
 
   .Header-body-text {
-    font-size: 12px;
+    padding-right: 15px;
+    font-size: 11px;
   }
 }
 

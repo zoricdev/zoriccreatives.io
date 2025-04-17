@@ -5,12 +5,7 @@ html {
 body {
     background-color: #02020C;
     font-family: 'Inter', sans-serif;
-}
-
-@media (max-width: 768px) {
-  body {
     overflow-x: hidden;
-  }
 }
 
 /* NAVBAR */
@@ -27,6 +22,10 @@ body {
     display: flex;
     align-items: center;
     gap: 10px;
+  }
+
+  .nav-links.active {
+    transform: translateX(0);
   }
   
   .nav-links {
